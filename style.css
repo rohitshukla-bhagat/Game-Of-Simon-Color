@@ -1,0 +1,150 @@
+/* CSS code start */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(4, 4, 4);
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container{
+    margin: 0 auto;
+    width: 50%;
+    max-width: 60em;
+    height: auto;
+    padding: 0.5em 0;
+    display: flex;
+    flex-direction: column;
+    align-items:center ;
+    justify-content: space-evenly;
+}
+.headings{
+    text-align: center;
+    align-content: center;
+}
+.headings > h1{
+    margin-bottom: 0.2em;
+}
+.headings > p{
+    margin-bottom: 1em;
+}
+.highScore{
+    margin-bottom: 0.8em;
+}
+.boxes{
+    width: 50%;
+    height: auto;
+    padding: 2em 1em;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0px 0px 10px white;
+    border: 2px solid white;
+    background-color: black;
+    border-top-left-radius: 2em;
+    border-bottom-right-radius:2em ;
+}
+.boxes > div{
+    width: 40%;
+    height: 8em;
+    margin: 1em auto;
+    border: 2px solid white;
+    border-radius: 0.7em;
+    cursor: pointer;
+}
+.box1{
+    background-color: #cb0000;
+    transition: all 0.1s linear;
+    &:hover{
+        border: 3px solid white;
+        background-color: #cb0000;
+        border-radius: 1em;
+    }
+}
+.box2{
+    background-color: 	#f7c601;
+    transition: all 0.1s linear;
+    &:hover{
+        border: 3px solid white;
+        background-color: #f7c601;
+        border-radius: 1em;
+    }
+}
+.box3{
+    background-color: #38b000;
+    transition: all 0.1s linear;
+    &:hover{
+        border: 3px solid white;
+        background-color: #38b000;
+        border-radius: 1em;
+    }
+}
+.box4{
+    background-color: #004a8f;
+    transition: all 0.1s linear;
+    &:hover{
+        border: 3px solid white;
+        background-color: #004a8f;
+        border-radius: 1em;
+    }
+}
+.errorElem{
+    color: #FF0000;
+    margin-bottom: 1.2em;
+}
+.resBtn{
+    width: 5em;
+    height: 2.5em;
+    border: 3px solid #EF0107;
+    border-radius: 0.7em;
+    margin-top: 1em;
+    font-size: 1.1em;
+    background-color: #EF0107;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s linear;
+    &:hover{
+        background-color: black;
+    }
+}
+/* For Responsiveness */
+@media screen and (width < 1200px) {
+    .boxes{
+        width: 55%;
+    }
+    .container{
+        width: 70%;
+    }
+    .level{
+        font-size: 0.9em;
+    }
+}
+@media screen and (orientation : portrait) {
+    .boxes{
+        width: 70%;
+    }
+    .container{
+        width: 60%;
+    }
+}
+@media screen and (width < 700px) {
+    .boxes{
+        width: 100%;
+    }
+    .container{
+        width: 80%;
+    }
+}
+@media screen and (width < 400px) {
+    .boxes{
+        width: 100%;
+    }
+    .container{
+        width: 98%;
+    }
+}
+/* CSS code end */
